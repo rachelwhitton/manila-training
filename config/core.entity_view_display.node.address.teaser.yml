@@ -1,0 +1,28 @@
+uuid: cd04e811-5f27-40e6-8c15-24de2ef693fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.address.body
+    - node.type.address
+  module:
+    - text
+    - user
+id: node.address.teaser
+targetEntityType: node
+bundle: address
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }
